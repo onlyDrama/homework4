@@ -10,8 +10,11 @@
 #include "t6.h"
 #include "fake_random_t7.h"
 #include "t8.h"
+#include <string>
+#include <conio.h>
 
-#define graphic(x) (sin(x)) //график который будет строится
+
+#define graphic(x) (tan(x)) //график который будет строится
 
 using namespace std;
 using namespace Roman;
@@ -102,8 +105,58 @@ int main()
 		}
 		if (w == 4)
 		{
-			cout << "Былую славу 1912 года\n";
+			int num, sl = 10;
+			string text = "'Былая слава' - 1912 г.'";
+			cout << "Печать 'Былой славы'." << endl;
+			cout << endl;
 
+			for (int z = 0; z < text.length(); z++)
+			{
+				Sleep(sl);
+				cout << text[z];
+			}			
+
+
+
+
+			cout << endl << endl;
+			for (int j = 0; j < 16; j++) 
+			{
+				Sleep(sl);
+				cout << "-" << " ";			
+			}
+			for (int j = 0; j < 15; j++)
+			{			
+				Sleep(sl);
+				cout << "-" << " ";
+			}
+			cout << endl;						
+
+
+						for (int i = 1; i <= 48; i++) {
+							Sleep(sl);
+							cout << "*" << " ";
+							if (i % 8 == 0) {
+								if (i == 16 || i == 32 || i == 48) {
+									for (int j = 0; j < 23; j++) {
+										Sleep(sl);
+										cout << "-" << " ";
+									}
+								}
+								cout << endl;
+							}
+
+						}
+
+						for (int q = 0; q < 3; q++) {
+							Sleep(sl);
+							cout << endl;
+							for (int j = 0; j <= 30; j++) {
+								Sleep(sl);
+								cout << "-" << " ";
+							}
+							cout << endl;
+						}
 		}
 		if (w == 5)
 		{
@@ -128,11 +181,6 @@ int main()
 			int count_of_el, m, i, c;
 			cin >> count_of_el >> m >> i >> c;
 			
-			for (int j = 0; j < count_of_el; j++)
-			{
-				cout << PRNG() << " ";
-				
-			}
 			cout << endl;
 			for (int j = 0; j < count_of_el; j++)
 			{

@@ -15,6 +15,12 @@ namespace Roman
 		case 'C':  return 100;
 		case 'D':  return 500;
 		case 'M':  return 1000;
+		case'CM': return 900;
+		case 'CD': return 400;
+		case 'XC': return 90;
+		case 'XL': return 40;
+		case 'IX': return 9;
+		case 'IV': return 4;
 		}
 		throw std::exception("Invalid character");
 	}
